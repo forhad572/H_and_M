@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Work Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+/*Header section*/
+header{
+	background-color: #fcb800;
+
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+.navbar{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.logo img{
+	max-width: 100%;
+}
+.logo{
+	flex-basis: 8%;
+	padding: 12px;
+}
+.menu{
+	flex-basis: 92%;
+}
+.menu ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.menu ul li a{
+	color: #000000;
+	font-weight: 500;
+	font-size: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.menu ul li a:hover{
+	color: #fff;
+	transition: 0.3s;
+}
+/*about us section*/
+.about{
+	margin: 70px 0;
+}
+.about h1{
+	font-size: 42px;
+	position: relative;
+	display: inline-block;
+}
+.about h1::before{
+	content: '';
+	position: absolute;
+	background: #ff3300;
+	height: 3px;
+	width: 55px;
+	top: 45px;
+	transition: 0.5s;
+}
+.about h1:hover::before{
+	width: 186px;
+	transition: 0.5s;
+}
+.about p{
+	font-size: 18px;
+	margin-top: 18px;
+	text-align: justify;
+}
+.about button{
+	background: #fcb800;
+	padding: 13px 33px;
+	margin-top: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 1px solid #fcb800;
+	transition: 0.3s;
+}
+.about button:hover{
+	background: #fff;
+	transition: 0.3s;
+}
+/*gallery section*/
+.text h1{
+	font-size: 42px;
+	margin-bottom: 18px;
+	position: relative;
+	display: inline-block;
+}
+.text h1::before{
+	content: '';
+	position: absolute;
+	background: #ff3300;
+	height: 3px;
+	width: 55px;
+	top: 45px;
+	transition: 0.5s;
+}
+.text h1:hover::before{
+	width: 272px;
+	transition: 0.5s;
+}
+.img{
+	flex-basis: 25%;
+	padding: 8px;
+	position: relative;
+	transition: 0.3s;
+}
+figure{
+	overflow: hidden;
+	border-radius: 8px;
+}
+.img img{
+	max-width: 100%;
+	border-radius: 8px;
+	transition: 0.3s;
+	overflow: hidden;
+	transform: scale(1);
+}
+.img img:hover{
+	transform: scale(1.1);
+}
+.img h4{
+	font-size: 18px;
+}
+.img p{
+	font-size: 20px;
+	color: #ff3300;
+	font-weight: 600;
+}
+.img button{
+	padding: 10px 36px;
+	font-size: 16px;
+	color: #000000;
+    background: #fcb800;
+    border: 1px solid #fcb800;
+    border-radius: 20px;
+    position: absolute;
+    left: 25%;
+    top: 70%;
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+.img:hover.img button{
+	display: block;
+	transition: 0.3s;
+}
+.img button:hover{
+	background: #fff;
+	transition: 0.3s;
+}
+
+
+/*checkout section*/
+.checkout{
+	margin: 70px 0; 
+}
+.text-2 h1{
+	font-size: 42px;
+	margin-bottom: 18px;
+	position: relative;
+	display: inline-block;
+}
+.text-2 h1::before{
+	content: '';
+	position: absolute;
+	background: #ff3300;
+	height: 3px;
+	width: 55px;
+	top: 45px;
+	transition: 0.5s;
+}
+.text-2 h1:hover::before{
+	width: 196px;
+	transition: 0.5s;
+}
+.nav{
+	display: flex;
+	justify-content: center;
+}
+.product-img, .nav img{
+	max-width: 100%;
+}
+.product-img{
+	flex-basis: 40%;
+	padding: 15px;
+}
+.product-text{
+	flex-basis: 30%;
+	padding: 15px;
+}
+.product-text h1{
+	font-size: 22px;
+	padding-bottom: 18px;
+	text-transform: uppercase;
+}
+.product-text b{
+	font-size: 38px;
+	color: #ff3300;
+}
+.product-text b span{
+	font-size: 20px;
+	font-weight: 500;
+    text-decoration: line-through;
+    margin-left: 12px;
+    color: #666;
+}
+.product-text p{
+	text-align: justify;
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+.product-img .nav div{
+	padding: 6px;
+}
+.quantity h4{
+	font-size: 18px;
+    color: #666;
+    font-weight: 400;
+}
+.quantity p{
+	color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 28px;
+    border: solid 1px #000;
+    max-width: 38%;
+    margin-top: 8px;
+}
+.size p{
+	font-size: 18px;
+	font-weight: 400;
+	color: #666;
+}
+.size span{
+	font-size: 20px;
+	color: #000000;
+	font-weight: 600
+}
+.nav-2{
+	display: flex;
+	justify-content: space-between;
+}
+.cart button{
+	background: #000000;
+	color: #fff;
+	padding: 13px 33px;
+	margin-top: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 1px solid #000000;
+	transition: 0.3s;
+}
+.cart button:hover{
+	background: #fff;
+	color: #000000;
+	transition: 0.3s;
+}
+.buy button{
+	background: #fcb800;
+	padding: 13px 33px;
+	margin-top: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 1px solid #fcb800;
+	transition: 0.3s;
+}
+.buy button:hover{
+	background: #fff;
+	transition: 0.3s;
+}
